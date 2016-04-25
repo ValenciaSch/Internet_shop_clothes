@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.0.10.6
+- http://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3307
+- Время создания: Фев 10 2016 г., 22:52
+- Версия сервера: 5.5.41-log
+- Версия PHP: 5.4.35
+-->
+
+
+    <!--
+    - Structure schemas
+    -->
+   
+    <!--
+    - База данных: 'db_shop2'
+    -->
+    <database name="db_shop2">
+        <!-- Таблица Goods -->
+       
+        <table name="Goods">
+            <id>22</id>
+            <name>Трикотажный топ</name>
+            <id_brands>9</id_brands>
+            <id_category1>1</id_category1>
+            <id_category2>8</id_category2>
+            <id_category3>14</id_category3>
+            <img>trikotazhnyj-top (3).jpg</img>
+            <id_color>зеленый океан; белый; изумрудный; нежно лимонный; темно-синий</id_color>
+            <img_clothers>trikotazhnyj-top-zelenyj-okean.jpg; trikotazhnyj-top-belyj.jpg; trikotazhnyj-top-izumrudnyj.jpg; trikotazhnyj-top-nezhno-limonnyj.jpg; trikotazhnyj-top-temno-sinij.jpg</img_clothers>
+            <id_size>32/34; 34/36; 36/38; 38/40</id_size>
+            <img_slide>trikotazhnyj-top (3).jpg; trikotazhnyj-top (4).jpg; trikotazhnyj-top (5).jpg; trikotazhnyj-top-zelenyj-okean.jpg; trikotazhnyj-top-belyj.jpg; trikotazhnyj-top-izumrudnyj.jpg; trikotazhnyj-top-nezhno-limonnyj.jpg; trikotazhnyj-top-temno-sinij.jpg</img_slide>
+            <short_description>Марка	BODYFLIRT
+Материал	95% вискоза, 5% эластан
+Длина	64 см (размер 36/38)
+Длина рукавов	короткий рукав
+Вырез	водопад</short_description>
+            <full_description>Модель с небольшим вырезом-водопадом, создающим великолепное декольте! Рукава «летучая мышь» с сексапильными разрезами и аппликация в виде стразов отлично завершают общую картину. Длина ок. 64 см (разм. 36/38). Машинная стирка. 95% вискоза, 5% эластан</full_description>
+            <visible>1</visible>
+            <hits>0</hits>
+            <new1>NULL</new1>
+            <sale>NULL</sale>
+            <price>500</price>
+            <date>2016-01-12 00:20:49</date>
+        </table>
+    </database>

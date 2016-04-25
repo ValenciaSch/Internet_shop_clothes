@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.0.10.6
+- http://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3307
+- Время создания: Фев 10 2016 г., 22:52
+- Версия сервера: 5.5.41-log
+- Версия PHP: 5.4.35
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="db_shop2" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="Goods">
+                CREATE TABLE `Goods` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) NOT NULL,
+                  `id_brands` int(11) NOT NULL,
+                  `id_category1` int(11) NOT NULL,
+                  `id_category2` int(11) NOT NULL,
+                  `id_category3` int(11) NOT NULL,
+                  `img` varchar(255) NOT NULL,
+                  `id_color` varchar(255) NOT NULL,
+                  `img_clothers` varchar(255) NOT NULL,
+                  `id_size` varchar(255) NOT NULL,
+                  `img_slide` varchar(255) NOT NULL,
+                  `short_description` text NOT NULL,
+                  `full_description` text NOT NULL,
+                  `visible` int(11) NOT NULL DEFAULT '1',
+                  `hits` int(11) NOT NULL,
+                  `new1` int(11) DEFAULT NULL,
+                  `sale` int(11) DEFAULT NULL,
+                  `price` double NOT NULL,
+                  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  PRIMARY KEY (`id`),
+                  KEY `id_category1` (`id_category1`),
+                  KEY `id_category2` (`id_category2`),
+                  KEY `id_category3` (`id_category3`),
+                  KEY `id_category3_2` (`id_category3`),
+                  KEY `id_category3_3` (`id_category3`),
+                  CONSTRAINT `goods_ibfk_1` FOREIGN KEY (`id_category1`) REFERENCES `Category1` (`id`),
+                  CONSTRAINT `goods_ibfk_2` FOREIGN KEY (`id_category2`) REFERENCES `Category2` (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'db_shop2'
+    -->
+    <database name="db_shop2">
+        <!-- Таблица Goods -->
+        <table name="Goods">
+            <column name="id">1</column>
+            <column name="name">Футболка</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">2</column>
+            <column name="id_category3">0</column>
+            <column name="img">futbolka.jpg</column>
+            <column name="id_color">0</column>
+            <column name="img_clothers"></column>
+            <column name="id_size">0</column>
+            <column name="img_slide"></column>
+            <column name="short_description">Марка	BODYFLIRT
+Материал	100% хлопок
+Цвет	слоновая кость</column>
+            <column name="full_description">Обещает хорошее настроение – футболка с подмигивающим смайликом из блестящих камешков. Круглый вырез. Рукав 3/4. Длина ок. 66 см (разм. 40/42). Машинная стирка. 100% хлопок</column>
+            <column name="visible">1</column>
+            <column name="hits">1</column>
+            <column name="new1">0</column>
+            <column name="sale">0</column>
+            <column name="price">129</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">2</column>
+            <column name="name">Футболка-стретч с длинным рукавом</column>
+            <column name="id_brands">10</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">2</column>
+            <column name="id_category3">0</column>
+            <column name="img">futbolka-stretch-s-dlinnym-rukavom.jpg</column>
+            <column name="id_color">0</column>
+            <column name="img_clothers"></column>
+            <column name="id_size">0</column>
+            <column name="img_slide"></column>
+            <column name="short_description">Марка	bpc bonprix collection
+Материал	50% вискоза, 50% хлопок
+Длина	66 см (размер 40/42)
+Длина рукавов	длинный рукав
+Вырез	круглый
+Цвет	кленово-красный с рисунком</column>
+            <column name="full_description">Длина ок. 66 см (разм. 40/42). Машинная стирка. 50% вискоза, 50% хлопок</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">1</column>
+            <column name="sale">0</column>
+            <column name="price">249</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">3</column>
+            <column name="name">Футболка</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">2</column>
+            <column name="id_category3">0</column>
+            <column name="img">futbolka (1).jpg</column>
+            <column name="id_color">0</column>
+            <column name="img_clothers"></column>
+            <column name="id_size">0</column>
+            <column name="img_slide"></column>
+            <column name="short_description">Марка	BODYFLIRT
+Материал	95% хлопок, 5% эластан
+Цвет	красный</column>
+            <column name="full_description">Прекрасная модель для офиса или в свободное время. Покрой без рукавов. Высокий ворот с декоративной молнии в воротниковой зоне. Мягкий хлопок. Длина ок. 66 см (разм. 40/42). Машинная стирка. 95% хлопок, 5% эластан</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">0</column>
+            <column name="sale">1</column>
+            <column name="price">179</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">4</column>
+            <column name="name">Футболка</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">2</column>
+            <column name="id_category3">0</column>
+            <column name="img">futbolka (6).jpg</column>
+            <column name="id_color">0</column>
+            <column name="img_clothers"></column>
+            <column name="id_size">0</column>
+            <column name="img_slide">l;k</column>
+            <column name="short_description">Материал	96% вискоза, 4% эластан
+Длина	64 см (размер 36/38)
+Длина рукавов	3/4
+Цвет	цвет белой шерсти</column>
+            <column name="full_description">Соблазнительный женственный стиль! Футболка с очень красивым декольте дизайна в узел. Украшена декоративной аппликацией. Рукава 3/4. Узкий силуэт. Длина ок. 56 см (разм. 38). 96% вискоза, 4% эластан</column>
+            <column name="visible">0</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">369</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">5</column>
+            <column name="name">Платье с кружевом</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">7</column>
+            <column name="id_category3">0</column>
+            <column name="img">plate-s-kruzhevom.jpg</column>
+            <column name="id_color">синий; красный; черный</column>
+            <column name="img_clothers">plate-s-kruzhevom-krasnyj-svetlo-korichnevyj.jpg; plate-s-kruzhevom-chernyj-svetlo-korichnevyj.jpg</column>
+            <column name="id_size">32/34; 34/36; 44/46</column>
+            <column name="img_slide">plate-s-kruzhevom.jpg; plate-s-kruzhevom-krasnyj-svetlo-korichnevyj.jpg; plate-s-kruzhevom-chernyj-svetlo-korichnevyj.jpg</column>
+            <column name="short_description">Материал	верх: 94% полиэстер, 6% эластан, подкладка: 100% полиэстер, кружево: 100% полиамид
+Длина	98 см
+Длина	прикрывает колено
+Цвет	синий</column>
+            <column name="full_description">Must-Have в гардеробе каждой модницы: облегающее платье с глубоким V-вырезом и кружевной вставкой в талии. Длина ок. 98 см (разм. 36/38). верх: 96% полиэстер, 4% эластан, подкладка: 100% полиэстер, кружево: 100% полиамид</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">0</column>
+            <column name="sale">0</column>
+            <column name="price">679</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">6</column>
+            <column name="name">Платье</column>
+            <column name="id_brands">0</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">7</column>
+            <column name="id_category3">0</column>
+            <column name="img">plate.jpg</column>
+            <column name="id_color">черный; красный; кремовый; белый; черный/красный</column>
+            <column name="img_clothers">plate-chernyj-bezhevyj.jpg; plate-krasnyj-bezhevyj.jpg; plate-kremovyj.jpg; plate-tsvet-shampanskogo-bezhevyj.jpg; plate-chernyj-madzhenta.jpg</column>
+            <column name="id_size">32; 34; 36; 38; 40; 42; 44; 46</column>
+            <column name="img_slide">plate.jpg; plate-chernyj-bezhevyj.jpg; plate-krasnyj-bezhevyj.jpg; plate-kremovyj.jpg; plate-tsvet-shampanskogo-bezhevyj.jpg; plate-chernyj-madzhenta.jpg</column>
+            <column name="short_description">Материал	верх: 100% полиамид, подкладка: 100% полиэстер
+Длина	152 см (размер 38)
+Длина рукавов	7/8
+Длина	длинный/длинная
+Цвет	красный/бежевый</column>
+            <column name="full_description">Для гламурного выхода: вечернее платье в пол! Выполнено из очень красивого, прозрачного кружева. Рукава 3/4. Небольшой вырез-лодочка. Очень облегающий покрой. Длина ок. 148 см (разм. 42). 100% полиэстер</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">0</column>
+            <column name="sale">0</column>
+            <column name="price">1299</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">7</column>
+            <column name="name">Платье</column>
+            <column name="id_brands">0</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">7</column>
+            <column name="id_category3">0</column>
+            <column name="img">plate (1).jpg</column>
+            <column name="id_color">черный; красный; синий</column>
+            <column name="img_clothers">plate-chernyj.jpg; plate-krasnyj-belyj.jpg; plate-sinij-belyj.jpg</column>
+            <column name="id_size">32; 34; 36; 38; 40; 42; 44; 46</column>
+            <column name="img_slide">plate (1).jpg; plate-chernyj.jpg; plate-krasnyj-belyj.jpg; plate-sinij-belyj.jpg</column>
+            <column name="short_description">Материал	верх: 70% вискоза, 25% полиэстер, 5% эластан, вставка: 100% хлопок
+Длина	90 см (размер 38)
+Длина рукавов	длинный рукав
+Длина	прикрывает колено
+Цвет	красный/белый</column>
+            <column name="full_description">Очаровательный ретро-шик модного покроя: платье с очень привлекательными воротничком и манжетами на рукавах! Прямой силуэт и облегающий покрой прекрасно завершают общую картину модели. Длина ок. 98 см (разм. 38). 70% вискоза, 25% полиэстер, 5% эластан</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">0</column>
+            <column name="sale">0</column>
+            <column name="price">699</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">8</column>
+            <column name="name">Трикотажное платье</column>
+            <column name="id_brands">8</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">7</column>
+            <column name="id_category3">0</column>
+            <column name="img">trikotazhnoe-plate.jpg</column>
+            <column name="id_color">белый; синий</column>
+            <column name="img_clothers">trikotazhnoe-plate-tsvet-beloj-shersti-chernyj.jpg; trikotazhnoe-plate-sapfirno-sinij-chernyj.jpg</column>
+            <column name="id_size">36; 38</column>
+            <column name="img_slide">trikotazhnoe-plate.jpg; trikotazhnoe-plate (1).jpg; trikotazhnoe-plate (3).jpg; trikotazhnoe-plate (4).jpg; trikotazhnoe-plate (5).jpg; trikotazhnoe-plate-tsvet-beloj-shersti-chernyj.jpg; trikotazhnoe-plate-sapfirno-sinij-chernyj.jpg</column>
+            <column name="short_description">Марка	BODYFLIRT
+Материал	верх: 72% вискоза, 20% полиэстер, 8% эластан, кружево: 100% полиэстер
+Длина	90 см (размер 36/38)
+Длина	мини
+Цвет	сапфирно-синий/черный</column>
+            <column name="full_description">Привлекательное трикотажное платье с длинным рукавом и изысканной кружевной вставкой в области груди и плеч. Длина ок. 90 см (разм. 36/38). верх: 72% вискоза, 20% полиэстер, 8% эластан, кружево: 100% полиэстер</column>
+            <column name="visible">1</column>
+            <column name="hits">1</column>
+            <column name="new1">0</column>
+            <column name="sale">0</column>
+            <column name="price">549</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">9</column>
+            <column name="name">Блузка</column>
+            <column name="id_brands">10</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">2</column>
+            <column name="id_category3">0</column>
+            <column name="img">bluzka.jpg</column>
+            <column name="id_color">0</column>
+            <column name="img_clothers"></column>
+            <column name="id_size">0</column>
+            <column name="img_slide"></column>
+            <column name="short_description">Марка	bpc selection
+Материал	100% полиэстер
+Длина	70 см (размер 38)
+Длина рукавов	7/8
+Вырез	V-образный
+Застежка	пуговицы
+Цвет	черный</column>
+            <column name="full_description">Очаровательная модель облегающего покроя. Спереди с вшитыми складками. Рукав 3/4 с широким низом. Длина от 69 см (разм. 36) до 78 см (разм. 54). Машинная стирка. 100% полиэстер</column>
+            <column name="visible">0</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">549</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">10</column>
+            <column name="name">Футболка</column>
+            <column name="id_brands">11</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">2</column>
+            <column name="id_category3">0</column>
+            <column name="img">futbolka (3).jpg</column>
+            <column name="id_color">0</column>
+            <column name="img_clothers"></column>
+            <column name="id_size">0</column>
+            <column name="img_slide"></column>
+            <column name="short_description">Марка	RAINBOW
+Материал	100% хлопок
+Длина	68 см (размер 36/38)
+Длина рукавов	короткий/длинный
+Вырез	круглый
+Цвет	белый с рисунком имен</column>
+            <column name="full_description">Остромодная футболка с принтом! Длина ок. 68 см (разм. 36/38). 100% хлопок</column>
+            <column name="visible">0</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">199</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">11</column>
+            <column name="name">Футболка</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">2</column>
+            <column name="id_category3">0</column>
+            <column name="img">futbolka (4).jpg</column>
+            <column name="id_color">0</column>
+            <column name="img_clothers"></column>
+            <column name="id_size">0</column>
+            <column name="img_slide"></column>
+            <column name="short_description">Марка	BODYFLIRT
+Материал	95% вискоза, 5% эластан
+Длина	60 см (размер 36/38)
+Фасон	облегающий
+Вырез	круглый
+Цвет	натуральный камень</column>
+            <column name="full_description">Модель с коротким рукавом, вырезом-водопадом и модной деталью у выреза. Длина ок. 60 см (разм. 36/38).). 95% вискоза, 5% эластан</column>
+            <column name="visible">0</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">429</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">12</column>
+            <column name="name">Футболка </column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">2</column>
+            <column name="id_category3">0</column>
+            <column name="img">futbolka (5).jpg</column>
+            <column name="id_color">0</column>
+            <column name="img_clothers"></column>
+            <column name="id_size">0</column>
+            <column name="img_slide"></column>
+            <column name="short_description">Марка	BODYFLIRT
+Материал	95% вискоза, 5% эластан
+Длина	72 см (размер 36/38)
+Вырез	круглый
+Цвет	кленово-красный</column>
+            <column name="full_description">Футболка марки BODYFLIRT из приятного трикотажа. Свободный покрой с закругленным низом. Контрастные швы в области рукавов. Длина ок. 72 см (разм. 36/38). 95% вискоза, 5% эластан</column>
+            <column name="visible">0</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">239</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">13</column>
+            <column name="name">Платье</column>
+            <column name="id_brands">5</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">7</column>
+            <column name="id_category3">0</column>
+            <column name="img">plate (2).jpg</column>
+            <column name="id_color">белый; красный; черный</column>
+            <column name="img_clothers">plate-ekryu.jpg; plate-madzhenta.jpg; plate-chernyj (1).jpg</column>
+            <column name="id_size">34; 36; 38; 40; 42; 44; 46</column>
+            <column name="img_slide">plate (2).jpg; plate (4).jpg; plate-ekryu.jpg; plate-madzhenta.jpg; plate-chernyj (1).jpg</column>
+            <column name="short_description">Материал	верх: 70% вискоза, 25% полиэстер, 5% эластан
+Длина	94 см (размер 38)
+Длина рукавов	7/8
+Длина	прикрывает колено
+Цвет	маджента</column>
+            <column name="full_description">Настоящее модное заявление: платье в древнегреческом стиле! Великолепная модель с широкими рукавами и объемным круглым вырезом. В талии украшено интегрированным ремнем золотистого цвета. Длина ок. 94 (разм. 38). верх: 70% вискоза, 25% полиэстер, 5% эластан</column>
+            <column name="visible">0</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">699</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">14</column>
+            <column name="name">Платье</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">7</column>
+            <column name="id_category3">0</column>
+            <column name="img">plate (3).jpg</column>
+            <column name="id_color">черный + красный с рисунком</column>
+            <column name="img_clothers">plate-chernyj-krasnyj-s-risunkom.jpg</column>
+            <column name="id_size">34; 36; 38; 40; 42; 44; 46</column>
+            <column name="img_slide">plate (3).jpg; plate (5).jpg; plate (6).jpg; plate-chernyj-krasnyj-s-risunkom.jpg</column>
+            <column name="short_description">Марка	BODYFLIRT
+Материал	верх: 100% полиэстер, подкладка: 100% полиэстер
+Длина	прикрывает колено
+Цвет	черный/красный с рисунком</column>
+            <column name="full_description">Единственное в своем роде – платье из благородного сатина с экстравагантным анималистическим принтом. Облегающий покрой. Спереди небольшие сборки. На молнии. На подкладке. Длина ок. 102 см (разм. 42). верх: 100% полиэстер, подкладка: 100% полиэстер</column>
+            <column name="visible">0</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">679</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">15</column>
+            <column name="name">Вязаное платье с кружевной отделкой</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">7</column>
+            <column name="id_category3">0</column>
+            <column name="img">vyazanoe-plate-s-kruzhevnoj-otdelkoj.jpg</column>
+            <column name="id_color">черный; синий</column>
+            <column name="img_clothers">vyazanoe-plate-s-kruzhevnoj-otdelkoj-chernyj-belyj.jpg; vyazanoe-plate-s-kruzhevnoj-otdelkoj-temno-sinij-svetlo-seryj.jpg</column>
+            <column name="id_size">42; 44; 46; 48</column>
+            <column name="img_slide">vyazanoe-plate-s-kruzhevnoj-otdelkoj.jpg; vyazanoe-plate-s-kruzhevnoj-otdelkoj (1).jpg; vyazanoe-plate-s-kruzhevnoj-otdelkoj (3).jpg; vyazanoe-plate-s-kruzhevnoj-otdelkoj-chernyj-belyj.jpg; vyazanoe-plate-s-kruzhevnoj-otdelkoj-temno-sinij-svetlo-seryj.jpg</column>
+            <column name="short_description">Марка	BODYFLIRT
+Материал	100% полиакрил
+Длина	90 см (размер 36/38)
+Длина рукавов	длинный рукав
+Длина	мини
+Вырез	V-образный
+Цвет	темно-синий/светло-серый</column>
+            <column name="full_description">Прелестное вязаное платье с кружевной отделкой в верхней части. Узкий покрой нежно повторяет женственный силуэт. Длинный рукав. V-образный вырез горловины. Шикарные туфли или туфли на каблуке-шпильке выгодно дополнят эту короткую модель из мягкой пряжи. Длина ок. 90 см (разм. 36/38). 100% полиакрил</column>
+            <column name="visible">0</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">599</column>
+            <column name="date">0000-00-00 00:00:00</column>
+        </table>
+        <table name="Goods">
+            <column name="id">16</column>
+            <column name="name">Топ с воланом</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">8</column>
+            <column name="id_category3">13</column>
+            <column name="img">top-s-volanom.jpg</column>
+            <column name="id_color">красный; синий; белый; черный</column>
+            <column name="img_clothers">top-s-volanom-krasnyj.jpg; top-s-volanom-sinij.jpg; top-s-volanom-belyj.jpg; top-s-volanom-chernyj.jpg</column>
+            <column name="id_size">32/34; 36/38; 40/42; 44/46</column>
+            <column name="img_slide">top-s-volanom.jpg; top-s-volanom (1).jpg; top-s-volanom (2).jpg; top-s-volanom-krasnyj.jpg; top-s-volanom-sinij.jpg; top-s-volanom-belyj.jpg; top-s-volanom-chernyj.jpg</column>
+            <column name="short_description">мягкий трикотажа и спереди украшен воланом из легкого тканого материала.</column>
+            <column name="full_description">Топ для настоящих модниц! Выполнен из мягкого трикотажа и спереди украшен воланом из легкого тканого материала. Длина ок. 72 см (разм. 36/38).</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">479</column>
+            <column name="date">2016-01-11 23:48:01</column>
+        </table>
+        <table name="Goods">
+            <column name="id">17</column>
+            <column name="name">Топ с пайетками</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">8</column>
+            <column name="id_category3">13</column>
+            <column name="img">top-s-pajetkami.jpg</column>
+            <column name="id_color">серо-коричневый; белый; черный</column>
+            <column name="img_clothers">top-s-pajetkami-sero-korichnevyj.jpg; top-s-pajetkami-tsvet-beloj-shersti.jpg; top-s-pajetkami-chernyj.jpg</column>
+            <column name="id_size">34/36; 36/38; 40/42</column>
+            <column name="img_slide">top-s-pajetkami.jpg; top-s-pajetkami (1).jpg; top-s-pajetkami (2).jpg; top-s-pajetkami-sero-korichnevyj.jpg; top-s-pajetkami-tsvet-beloj-shersti.jpg; top-s-pajetkami-chernyj.jpg</column>
+            <column name="short_description">Марка	BODYFLIRT
+Материал	95% вискоза, 5% эластан
+Длина	64 см (размер 36/38)
+Вырез	V-образный</column>
+            <column name="full_description">Красивый топ марки BODYFLIRT с матово блестящими пайетками и сборками спереди − обеспечит эффектный образ! Длина ок. 64 см (разм. 36/38). 95% вискоза, 5% эластан</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">429</column>
+            <column name="date">2016-01-11 23:54:17</column>
+        </table>
+        <table name="Goods">
+            <column name="id">18</column>
+            <column name="name">Трикотажная блузка</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">8</column>
+            <column name="id_category3">13</column>
+            <column name="img">trikotazhnaya-bluzka.jpg</column>
+            <column name="id_color">белый; черный; лиловая фиалка</column>
+            <column name="img_clothers">trikotazhnaya-bluzka-ekryu.jpg; trikotazhnaya-bluzka-chernyj.jpg; trikotazhnaya-bluzka-lilovaya-fialka.jpg</column>
+            <column name="id_size">34/36; 36/38; 40/42</column>
+            <column name="img_slide">trikotazhnaya-bluzka.jpg; trikotazhnaya-bluzka (1).jpg; trikotazhnaya-bluzka (2).jpg; trikotazhnaya-bluzka (3).jpg; trikotazhnaya-bluzka-ekryu.jpg; trikotazhnaya-bluzka-chernyj.jpg; trikotazhnaya-bluzka-lilovaya-fialka.jpg</column>
+            <column name="short_description">Марка	BODYFLIRT
+Длина	60 см (размер 36/38)
+Длина рукавов	без рукавов
+Застежка	пуговицы</column>
+            <column name="full_description">Смотрится шикарно и женственно: элегантная трикотажная блузка марки BODYFLIRT с нежным кружевом и небольшим воротником-стойкой − настоящая приманка для глаз, которая поможет Вам создать сногсшибательный образ! Длина ок. 64 см (разм. 36/38). 96% вискоза, 4% эластан</column>
+            <column name="visible">1</column>
+            <column name="hits">1</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">549</column>
+            <column name="date">2016-01-12 00:04:31</column>
+        </table>
+        <table name="Goods">
+            <column name="id">19</column>
+            <column name="name">Топ</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">8</column>
+            <column name="id_category3">13</column>
+            <column name="img">top.jpg</column>
+            <column name="id_color">кремовый</column>
+            <column name="img_clothers">top-kremovyj.jpg</column>
+            <column name="id_size">34; 36; 38; 40; 42; 44</column>
+            <column name="img_slide">top.jpg; top (1).jpg; top (2).jpg; top-kremovyj.jpg</column>
+            <column name="short_description">Марка	BODYFLIRT
+Цвет	кремовый</column>
+            <column name="full_description">Очень элегантная и эксклюзивная модель. Из благородного высококачественного гипюра. Подкладка и спинка из нежного трикотажа. Круглый вырез. Сзади вырез в виде слезы на пуговицах. Длина ок. 63 см (разм. 42).</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">649</column>
+            <column name="date">2016-01-12 00:04:31</column>
+        </table>
+        <table name="Goods">
+            <column name="id">20</column>
+            <column name="name">Трикотажный топ</column>
+            <column name="id_brands">11</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">8</column>
+            <column name="id_category3">14</column>
+            <column name="img">trikotazhnyj-top.jpg</column>
+            <column name="id_color">белый с рисунком</column>
+            <column name="img_clothers">trikotazhnyj-top-belyj-s-risunkom.jpg</column>
+            <column name="id_size">32/34; 34/36; 36/38; 38/40</column>
+            <column name="img_slide">trikotazhnyj-top.jpg; trikotazhnyj-top (1).jpg; trikotazhnyj-top (2).jpg; trikotazhnyj-top-belyj-s-risunkom.jpg</column>
+            <column name="short_description">Марка	RAINBOW
+Материал	100% вискоза
+Длина	68 см (размер 36/38)
+Длина рукавов	без рукавов
+Вырез	круглый
+Бретельки	широкие
+Цвет	белый с рисунком</column>
+            <column name="full_description">Непринужденный трикотажный топ свободного покроя. Сзади длиннее, чем спереди. Длина ок. 68 см (разм. 36/38). 100% вискоза</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">239</column>
+            <column name="date">2016-01-12 00:11:16</column>
+        </table>
+        <table name="Goods">
+            <column name="id">21</column>
+            <column name="name">Купальный топ</column>
+            <column name="id_brands">10</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">8</column>
+            <column name="id_category3">14</column>
+            <column name="img">kupalnyj-top.jpg</column>
+            <column name="id_color">черный</column>
+            <column name="img_clothers">kupalnyj-top-chernyj.jpg</column>
+            <column name="id_size">36; 38; 40; 42; 44; 46</column>
+            <column name="img_slide">kupalnyj-top.jpg; kupalnyj-top (1).jpg; kupalnyj-top (2).jpg; kupalnyj-top (3).jpg; kupalnyj-top-chernyj.jpg</column>
+            <column name="short_description">Марка	bpc bonprix collection
+Материал	верх: 80% полиамид, 20% эластан, подкладка: 100% полиэстер
+Бретельки	через шею, не регулируется
+Вкладыши	съемные подушечки
+Характеристики	подкладка в области груди
+Оснащение	резинка под грудью</column>
+            <column name="full_description">Съемные мягкие подушечки в чашках, подкладка в области груди, эластичная лента под грудью. На шее завязывается на ленты. Вырез украшен бахромой. верх: 80% полиамид, 20% эластан, подкладка: 100% полиэстер</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">579</column>
+            <column name="date">2016-01-12 00:15:48</column>
+        </table>
+        <table name="Goods">
+            <column name="id">22</column>
+            <column name="name">Трикотажный топ</column>
+            <column name="id_brands">9</column>
+            <column name="id_category1">1</column>
+            <column name="id_category2">8</column>
+            <column name="id_category3">14</column>
+            <column name="img">trikotazhnyj-top (3).jpg</column>
+            <column name="id_color">зеленый океан; белый; изумрудный; нежно лимонный; темно-синий</column>
+            <column name="img_clothers">trikotazhnyj-top-zelenyj-okean.jpg; trikotazhnyj-top-belyj.jpg; trikotazhnyj-top-izumrudnyj.jpg; trikotazhnyj-top-nezhno-limonnyj.jpg; trikotazhnyj-top-temno-sinij.jpg</column>
+            <column name="id_size">32/34; 34/36; 36/38; 38/40</column>
+            <column name="img_slide">trikotazhnyj-top (3).jpg; trikotazhnyj-top (4).jpg; trikotazhnyj-top (5).jpg; trikotazhnyj-top-zelenyj-okean.jpg; trikotazhnyj-top-belyj.jpg; trikotazhnyj-top-izumrudnyj.jpg; trikotazhnyj-top-nezhno-limonnyj.jpg; trikotazhnyj-top-temno-sinij.jpg</column>
+            <column name="short_description">Марка	BODYFLIRT
+Материал	95% вискоза, 5% эластан
+Длина	64 см (размер 36/38)
+Длина рукавов	короткий рукав
+Вырез	водопад</column>
+            <column name="full_description">Модель с небольшим вырезом-водопадом, создающим великолепное декольте! Рукава «летучая мышь» с сексапильными разрезами и аппликация в виде стразов отлично завершают общую картину. Длина ок. 64 см (разм. 36/38). Машинная стирка. 95% вискоза, 5% эластан</column>
+            <column name="visible">1</column>
+            <column name="hits">0</column>
+            <column name="new1">NULL</column>
+            <column name="sale">NULL</column>
+            <column name="price">429</column>
+            <column name="date">2016-01-12 00:20:49</column>
+        </table>
+    </database>
+</pma_xml_export>

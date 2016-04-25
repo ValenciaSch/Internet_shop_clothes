@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.0.10.6
+- http://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3307
+- Время создания: Фев 10 2016 г., 22:52
+- Версия сервера: 5.5.41-log
+- Версия PHP: 5.4.35
+-->
+
+
+    <!--
+    - Structure schemas
+    -->
+   
+    <!--
+    - База данных: 'db_shop2'
+    -->
+    <database name="db_shop2">
+        <!-- Таблица Goods -->
+        <table name="Goods">
+            <id>1</id>
+            <name>Футболка</name>
+            <id_brands>9</id_brands>
+            <id_category1>1</id_category1>
+            <id_category2>2</id_category2>
+            <id_category3>0</id_category3>
+            <img>futbolka.jpg</img>
+            <id_color>0</id_color>
+            <img_clothers></img_clothers>
+            <id_size>0</id_size>
+            <img_slide></img_slide>
+            <short_description>Марка	BODYFLIRT
+Материал	100% хлопок
+Цвет	слоновая кость</short_description>
+            <full_description>Обещает хорошее настроение – футболка с подмигивающим смайликом из блестящих камешков. Круглый вырез. Рукав 3/4. Длина ок. 66 см (разм. 40/42). Машинная стирка. 100% хлопок</full_description>
+            <visible>1</visible>
+            <hits>1</hits>
+            <new1>0</new1>
+            <sale>0</sale>
+            <price>130</price>
+            <date>0000-00-00 00:00:00</date>
+        </table>
+        <table name="Goods">
+            <id>2</id>
+            <name>Футболка-стретч с длинным рукавом</name>
+            <id_brands>10</id_brands>
+            <id_category1>1</id_category1>
+            <id_category2>2</id_category2>
+            <id_category3>0</id_category3>
+            <img>futbolka-stretch-s-dlinnym-rukavom.jpg</img>
+            <id_color>0</id_color>
+            <img_clothers></img_clothers>
+            <id_size>0</id_size>
+            <img_slide></img_slide>
+            <short_description>Марка	bpc bonprix collection
+Материал	50% вискоза, 50% хлопок
+Длина	66 см (размер 40/42)
+Длина рукавов	длинный рукав
+Вырез	круглый
+Цвет	кленово-красный с рисунком</short_description>
+            <full_description>Длина ок. 66 см (разм. 40/42). Машинная стирка. 50% вискоза, 50% хлопок</full_description>
+            <visible>1</visible>
+            <hits>0</hits>
+            <new1>1</new1>
+            <sale>0</sale>
+            <price>250</price>
+            <date>0000-00-00 00:00:00</date>
+        </table>
+        <table name="Goods">
+            <id>3</id>
+            <name>Футболка</name>
+            <id_brands>9</id_brands>
+            <id_category1>1</id_category1>
+            <id_category2>2</id_category2>
+            <id_category3>0</id_category3>
+            <img>futbolka (1).jpg</img>
+            <id_color>0</id_color>
+            <img_clothers></img_clothers>
+            <id_size>0</id_size>
+            <img_slide></img_slide>
+            <short_description>Марка	BODYFLIRT
+Материал	95% хлопок, 5% эластан
+Цвет	красный</short_description>
+            <full_description>Прекрасная модель для офиса или в свободное время. Покрой без рукавов. Высокий ворот с декоративной молнии в воротниковой зоне. Мягкий хлопок. Длина ок. 66 см (разм. 40/42). Машинная стирка. 95% хлопок, 5% эластан</full_description>
+            <visible>1</visible>
+            <hits>0</hits>
+            <new1>0</new1>
+            <sale>1</sale>
+            <price>200</price>
+            <date>0000-00-00 00:00:00</date>
+        </table>        
+        <table name="Goods">
+            <id>21</id>
+            <name>Купальный топ</name>
+            <id_brands>10</id_brands>
+            <id_category1>1</id_category1>
+            <id_category2>8</id_category2>
+            <id_category3>14</id_category3>
+            <img>kupalnyj-top.jpg</img>
+            <id_color>черный</id_color>
+            <img_clothers>kupalnyj-top-chernyj.jpg</img_clothers>
+            <id_size>36; 38; 40; 42; 44; 46</id_size>
+            <img_slide>kupalnyj-top.jpg; kupalnyj-top (1).jpg; kupalnyj-top (2).jpg; kupalnyj-top (3).jpg; kupalnyj-top-chernyj.jpg</img_slide>
+            <short_description>Марка	bpc bonprix collection
+Материал	верх: 80% полиамид, 20% эластан, подкладка: 100% полиэстер
+Бретельки	через шею, не регулируется
+Вкладыши	съемные подушечки
+Характеристики	подкладка в области груди
+Оснащение	резинка под грудью</short_description>
+            <full_description>Съемные мягкие подушечки в чашках, подкладка в области груди, эластичная лента под грудью. На шее завязывается на ленты. Вырез украшен бахромой. верх: 80% полиамид, 20% эластан, подкладка: 100% полиэстер</full_description>
+            <visible>1</visible>
+            <hits>0</hits>
+            <new1>NULL</new1>
+            <sale>NULL</sale>
+            <price>579</price>
+            <date>2016-01-12 00:15:48</date>
+        </table>
+        <table name="Goods">
+            <id>22</id>
+            <name>Трикотажный топ</name>
+            <id_brands>9</id_brands>
+            <id_category1>1</id_category1>
+            <id_category2>8</id_category2>
+            <id_category3>14</id_category3>
+            <img>trikotazhnyj-top (3).jpg</img>
+            <id_color>зеленый океан; белый; изумрудный; нежно лимонный; темно-синий</id_color>
+            <img_clothers>trikotazhnyj-top-zelenyj-okean.jpg; trikotazhnyj-top-belyj.jpg; trikotazhnyj-top-izumrudnyj.jpg; trikotazhnyj-top-nezhno-limonnyj.jpg; trikotazhnyj-top-temno-sinij.jpg</img_clothers>
+            <id_size>32/34; 34/36; 36/38; 38/40</id_size>
+            <img_slide>trikotazhnyj-top (3).jpg; trikotazhnyj-top (4).jpg; trikotazhnyj-top (5).jpg; trikotazhnyj-top-zelenyj-okean.jpg; trikotazhnyj-top-belyj.jpg; trikotazhnyj-top-izumrudnyj.jpg; trikotazhnyj-top-nezhno-limonnyj.jpg; trikotazhnyj-top-temno-sinij.jpg</img_slide>
+            <short_description>Марка	BODYFLIRT
+Материал	95% вискоза, 5% эластан
+Длина	64 см (размер 36/38)
+Длина рукавов	короткий рукав
+Вырез	водопад</short_description>
+            <full_description>Модель с небольшим вырезом-водопадом, создающим великолепное декольте! Рукава «летучая мышь» с сексапильными разрезами и аппликация в виде стразов отлично завершают общую картину. Длина ок. 64 см (разм. 36/38). Машинная стирка. 95% вискоза, 5% эластан</full_description>
+            <visible>1</visible>
+            <hits>0</hits>
+            <new1>NULL</new1>
+            <sale>NULL</sale>
+            <price>429</price>
+            <date>2016-01-12 00:20:49</date>
+        </table>
+    </database>
